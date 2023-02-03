@@ -6,15 +6,13 @@ function roll() {
     let randomNumberGen = Math.floor(Math.random() * 6)+1;
     img.setAttribute("src" , `${randomNumberGen}.png`);
     console.log(randomNumberGen)
+    console.log(document.getElementById('name').value);
 }
 
 function animation() {
     setTimeout(roll, 500);
     const img = document.getElementById("img");
     img.setAttribute("src","rollingdice.gif");
-    const nam = getElementById("name");
-    console.log(nam);
-
 }
 
 function alertFunction() {
