@@ -6,7 +6,10 @@ function roll() {
     let randomNumberGen = Math.floor(Math.random() * 6)+1;
     img.setAttribute("src" , `${randomNumberGen}.png`);
     console.log(randomNumberGen)
+    rolls.push(randomNumberGen)
     console.log(document.getElementById('name').value);
+    names.push(document.getElementById('name').value)
+    console.log(randomNumberGen)
 }
 
 function animation() {
@@ -29,3 +32,5 @@ input.addEventListener("keypress", function(event) {
     document.getElementById("rollBtn").click();
   }
 });
+
+/*Create function to update lists with name and number rolled and display to screen.*/
